@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Raleway');
+
+/* Variables */
+:root {
+	--c_main: rgb(52,61,70);
+	--c_accent: rgb(136,119,102);
+}
+
+*, *::before, *::after {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100vh;
+	background: var(--c_main);
+	background-blend-mode: color;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.main-cont {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100vw;
+	height: 100vh;
+}
+
+.left-col, .right-col {
+	font-family: 'Exo 2', sans-serif;
+	padding: 3rem;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 50%;
+}
+
+.right-col {
+	background-color: white;
+	line-height: 1.5;
+	padding: 3rem 6rem;
+	//justify-content: center;
+}
+
+.right-col h2 {
+	width: 100%;
+	font-size: 2rem;
+	text-align: left;
+	color: var(--c_accent);
+	margin: 2rem 0;
+}
+
+.name-cont {
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	margin-top: 2rem;
+}
+
+.title {
+	letter-spacing: .4rem;
+	font-size: 3rem;
+}
+
+.sub-title {
+	color: var(--c_accent);
+	font-size: 1rem;
+	letter-spacing: .2rem;
+}
+
+.cont-auth {
+	/*position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+	font-family: 'Exo 2', sans-serif;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding: 3rem;
+	margin-top: 8rem;
+	width: 50vmin;
+	background-color: white;
+	box-shadow: 0 2rem 3rem 0 #333;
+}
+
+.cont-auth > label {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.cont-auth > label span {
+	position: absolute;
+	top: 50%;
+	left: -8%;
+	padding: .5rem 1rem;
+	transform: translate(-100%, -50%);
+	background-color: var(--c_accent);
+	color: white;
+}
+
+.cont-auth > label input:not(:empty) {
+	background-color: lightgray;
+}
+
+.cont-auth > label input {
+	font-size: 1.2rem;
+	width: 100%;
+	padding: .6rem 1rem;
+	margin: 1rem 0;
+	border: none;
+	border-bottom: 1px solid var(--c_accent);
+}
+
+.cont-auth .btn-cont {
+	width: 100%;
+}
+
+.cont-auth .btn-cont .btn {
+	display: block;
+	width: 100%;
+	font-size: 1rem;
+	padding: .6rem;
+	background-color: var(--c_accent);
+	color: white;
+	border: none;
+}
+
+.btn-confirm {
+	margin-top: 1rem;
+}
